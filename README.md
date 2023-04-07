@@ -28,3 +28,6 @@
 4. Numbers
 
 https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/c48c27c5261ea3c5322b54146385f19565c9ecae/numParImpar.png
+
+5. Date of birth
+    
