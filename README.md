@@ -37,7 +37,7 @@ https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/c48c27c5261ea3
     -Su edad es Años
 
 6. Treasures
-    //Anàlisis
+    Anàlisis:
     1 habitaciòn
     3 cofres
     Al menos 1 tesoro en cofre
@@ -49,7 +49,7 @@ https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/c48c27c5261ea3
     Cofre medio: Todos estos cofres tienen tesoros en ellos   //No todos estos cofres tienen tesoros en ellos
     Cofre derecho: Solo uno de estos cofres tiene tesoros.    //Hay màs de un cofre que tiene tesoros
 
-    Conclusiòn
+    Conclusiòn:
     El cofre de medio no tiene tesoro
     Hay màs de un cofe con tesoros, son tres cofres, el del medio no tiene tesoro, entonces los cofres restantes contienen tesoros
     
