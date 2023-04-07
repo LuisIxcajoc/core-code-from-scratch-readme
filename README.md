@@ -26,5 +26,4 @@
     -Aplicar la fòrmula de (4/3) x pi x radio x radio x radio
 
 4. Numbers
-    -Obtener el nùmero a verificar
-    -
+/numParImpar.png
