@@ -26,5 +26,5 @@
     -Aplicar la fòrmula de (4/3) x pi x radio x radio x radio
 
 4. Numbers
-/assets/numParImpar.png
-/numParImpar.png
+
+https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/c48c27c5261ea3c5322b54146385f19565c9ecae/numParImpar.png
