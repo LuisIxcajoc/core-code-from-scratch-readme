@@ -27,3 +27,4 @@
 
 4. Numbers
 /assets/numParImpar.png
+/numParImpar.png
