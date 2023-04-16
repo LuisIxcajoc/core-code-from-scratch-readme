@@ -86,4 +86,4 @@ Mezclar
 fin
 
 //diagrama de flujo
-PraparaTazon.JPG
+https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/a67f06534e22cb6cbc4129039f00cf79141a5c0a/PraparaTazon.JPG
