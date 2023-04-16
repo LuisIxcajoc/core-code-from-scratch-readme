@@ -55,3 +55,35 @@ https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/c48c27c5261ea3
     
     ¿Qué cofres tienen tesoros?
     Cofre izquierdo y cofre derecho
+
+
+
+7. Logic problem
+
+Analìsis:
+5 Estudiantes
+
+Alice: "Nadie estudió matemáticas ayer".               //Los 5 estudiantes no estudiaron matemàticas
+Bob: "1 persona estudió matemáticas ayer".             //4 estudiantes no estudiaron matemàticas
+Charlie: "2 personas estudiaron matemáticas ayer".     //3 estudiantes no estudiaron matemàticas
+Dan: "3 personas estudiaron matemáticas ayer".         //2 estudiantes no estudiaron matemàticas
+Eva: "Ayer estudiaron matemáticas 4 personas".         //1 estudiante no estudiò matemàticas
+
+El maestro sabe que solo los que estudiaron estarían diciendo la verdad y los que no, estarían mintiendo. quien esta diciendo la verdad?
+
+Respuesta: Bob dice la verdad
+
+
+8. Cereal vrs Milk
+//Pseudocòdigo
+Inicio pseudocòdigo PreparaTazon
+Obtener cereal
+Obtener leche
+Obtener tazòn
+Colocar cereal en el tazòn
+Colocar la leche en el tazòn
+Mezclar
+fin
+
+//diagrama de flujo
+https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/c48c27c5261ea3c5322b54146385f19565c9ecae/PraparaTazon.JPG
