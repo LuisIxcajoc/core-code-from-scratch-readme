@@ -87,3 +87,6 @@ fin
 
 //diagrama de flujo
 https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/a67f06534e22cb6cbc4129039f00cf79141a5c0a/PraparaTazon.JPG
+
+9. Algorithm game
+https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/47f8abc71f8f13675aaa9e0447749ac8d70ab72c/Algorithmgame.JPG
