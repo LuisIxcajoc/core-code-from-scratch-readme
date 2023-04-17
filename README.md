@@ -166,3 +166,18 @@ Algoritmo boolean
 	f <- 40 >= 40
 	//f es verdadero debido a que 40 es mayor o igual a 40
 FinAlgoritmo
+
+
+14. Identify odd and even numbers
+
+Algoritmo numParImpar
+	Definir num Como Real
+	Escribir 'Ingrese número'
+	Leer num
+
+	residuo <- num % 2
+	Si residuo = 0
+		Entonces Escribir 'El nùmero: ' + ConvertirATexto(num) + ' es par'
+	SiNo Escribir 'El nùmero: ' + ConvertirATexto(num) + ' es impar'
+		FinSi
+FinAlgoritmo
