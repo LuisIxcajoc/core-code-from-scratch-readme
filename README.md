@@ -148,3 +148,21 @@ F | F = F                            ✅
 (T | F ) & (F | F) = T               ❌
 ~((T | F ) & (F | F)) & F = T        ❌
 ~((T | F ) & (F | F)) & T = F        ❌
+
+
+13. Boolean results
+
+Algoritmo boolean
+	a <- 5 == 3
+	//Compara 5 con 3, el resultado de a es falso debido a que 5 no es igual a 3
+	b <- 4 <> 3
+	//b es verdadero debido a que 4 es distinto a 3
+	c <- 7 > 7
+	//c es falso debido a que 7 no es mayor a 7
+	d <- 4 < 4
+	//d es falso debido a que 4 no es menor a 4
+	e <- 100 <= 90
+	//e es falso debido a que 100 no es menor o igual a 90
+	f <- 40 >= 40
+	//f es verdadero debido a que 40 es mayor o igual a 40
+FinAlgoritmo
