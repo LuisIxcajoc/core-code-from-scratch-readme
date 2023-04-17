@@ -90,3 +90,16 @@ https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/a67f06534e22cb
 
 9. Algorithm game
 https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/47f8abc71f8f13675aaa9e0447749ac8d70ab72c/Algorithmgame.JPG
+
+10. Mod
+Algoritmo numParImpar
+	Definir num Como Real
+	Escribir 'Ingrese número'
+	Leer num
+	residuo <- num % 2
+	Si residuo = 0 Entonces
+		Escribir 'El nùmero es par'
+	SiNo
+		Escribir 'El nùmero es impar'
+	FinSi
+FinAlgoritmo
