@@ -103,3 +103,30 @@ Algoritmo numParImpar
 		Escribir 'El nùmero es impar'
 	FinSi
 FinAlgoritmo
+
+11. Register form
+Algoritmo Formulario
+	Definir nombre, apellido, edad, correo, direccion Como Caracter
+
+	Escribir 'Ingrese su nombre: '
+	Leer nombre
+
+	Escribir 'Ingrese su apellido: '
+	Leer apellido
+
+	Escribir 'Ingrese su edad: '
+	Leer edad
+
+	Escribir 'Ingrese su correo electrònico: '
+	Leer correo
+
+	Escribir 'Ingrese su direcciòn: '
+	Leer direccion
+
+	Imprimir 'Nombre: ' + nombre
+	Imprimir 'Apellido: ' + apellido
+	Imprimir 'edad: ' + edad
+	Imprimir 'Correo electrònico: ' + correo
+	Imprimir 'direccion: ' + direccion
+
+FinAlgoritmo
