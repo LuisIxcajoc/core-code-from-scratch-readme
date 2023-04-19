@@ -1,5 +1,5 @@
 # core-code-from-scratch-readme
-
+//Semana 1
 1. Pizza
     -Comprar harina para pizza, tomate, etc. (Ingredientes)
     -Hacer salsa de tomate
@@ -57,7 +57,7 @@ https://github.com/LuisIxcajoc/core-code-from-scratch-readme/blob/c48c27c5261ea3
     Cofre izquierdo y cofre derecho
 
 
-
+//Semana 2
 7. Logic problem
 
 Analìsis:
@@ -181,3 +181,6 @@ Algoritmo numParImpar
 	SiNo Escribir 'El nùmero: ' + ConvertirATexto(num) + ' es impar'
 		FinSi
 FinAlgoritmo
+
+
+//Semana 3
