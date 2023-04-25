@@ -189,6 +189,62 @@ FinAlgoritmo
 Algoritmo calculadoraSensilla
 	Escribir 'Ingrese dos números: '
 	Leer num1, num2
+	
+	Escribir 'Ingrese operación a realizar (+, -, *, /): '
+	Leer operacion
+
+	Si operacion == '+' | operacion == '-' | operacion == '*' | operacion == '/' Entonces
+		Si operacion == '+' Entonces
+			Imprimir ConvertirATexto(num1) + ' + ' + ConvertirATexto(num2) + ' ='
+			Imprimir  num1 + num2
+		SiNo
+			Si operacion == '-' Entonces
+				Imprimir ConvertirATexto(num1) + ' - ' + ConvertirATexto(num2) + ' ='
+				Imprimir  num1 - num2
+			SiNo
+				Si operacion == '*' Entonces
+					Imprimir ConvertirATexto(num1) + ' * ' + ConvertirATexto(num2) + ' ='
+					Imprimir  num1 * num2
+				SiNo
+					Si operacion == '/' Entonces
+						Imprimir ConvertirATexto(num1) + ' / ' + ConvertirATexto(num2) + ' ='
+						Imprimir  num1 / num2
+					SiNo
+						Imprimir 'Opción no válida'
+					FinSi
+					
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
+
+
+- Special number
+
+Algoritmo specialNumber
+	Escribir 'Ingrese número: '
+	Leer n
+	Si n == 100 Entonces
+		Imprimir 'This is a special number'
+	SiNo
+		Si n < 1000 & n <> 100 & (n % 10 == 0) Entonces
+			Imprimir 'This number is almost special'
+		SiNo
+			Imprimir 'Just a regular number'
+		FinSi
+	FinSi
+	//Si n % 10 == 0 Entonces
+		//Imprimir 'This number is multiple of 10'
+	//FinSi
+FinAlgoritmo
+
+
+- Simple calculator with Switch
+
+Algoritmo calculadoraSensilla
+	Escribir 'Ingrese dos números: '
+	Leer num1, num2
 
 	Escribir 'Ingrese operación a realizar (+, -, *, /): '
 	Leer operacion
@@ -209,23 +265,4 @@ Algoritmo calculadoraSensilla
 		De Otro Modo:
 			Imprimir 'Opción no válida'
 	FinSegun
-FinAlgoritmo
-
-- Special number
-
-Algoritmo specialNumber
-	Escribir 'Ingrese número: '
-	Leer n
-	Si n == 100 Entonces
-		Imprimir 'This is a special number'
-	SiNo
-		Si n < 1000 & n <> 100 & (n % 10 == 0) Entonces
-			Imprimir 'This number is almost special'
-		SiNo
-			Imprimir 'Just a regular number'
-		FinSi
-	FinSi
-	//Si n % 10 == 0 Entonces
-		//Imprimir 'This number is multiple of 10'
-	//FinSi
 FinAlgoritmo
