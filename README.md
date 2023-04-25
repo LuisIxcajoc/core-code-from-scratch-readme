@@ -266,3 +266,51 @@ Algoritmo calculadoraSensilla
 			Imprimir 'Opción no válida'
 	FinSegun
 FinAlgoritmo
+
+
+-Multi Option Program
+
+Algoritmo calculadoraSensilla
+
+	Escribir 'Seleccione una opciòn ingresando el nùmero: '
+	Escribir '1. Suma dos nùmeros: '
+	Escribir '2. Imprimir el dìa de la semana: '
+	Escribir '3. Imprimir la longitud de un texto: '
+	Leer operacion
+
+	Segun operacion Hacer
+		'1':
+			Imprimir 'Ingrese dos nùmero para realizar la suma: '
+			Leer num1
+			Leer num2
+			Imprimir 'Suma de ' + ConvertirATexto(num1) + ' + ' + ConvertirATexto(num2) + ' ='
+			Imprimir  num1 + num2
+		'2':
+			Imprimir 'Ingrese un dìa de la semana'
+			Leer numeroDia
+			Segun numeroDia Hacer
+				'1':
+					Imprimir 'Lunes'
+				'2':
+					Imprimir 'Martes'
+				'3':
+					Imprimir 'Mièrcoles'
+				'4':
+					Imprimir 'Jueves'
+				'5':
+					Imprimir 'Viernes'
+				'6':
+					Imprimir 'Sàbado'
+				'7':
+					Imprimir 'Domingo'
+				De Otro Modo:
+					Imprimir 'Opciòn no vàlida'
+			FinSegun
+		'3':
+			Imprimir 'Ingrese un texto para calcular su longitud'
+			Leer texto
+			Imprimir 'La longitud de ' + texto + ' es: ' + ConvertirATexto(Longitud(texto))
+		De Otro Modo:
+			Imprimir 'Opción no válida'
+	FinSegun
+FinAlgoritmo
