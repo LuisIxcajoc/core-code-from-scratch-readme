@@ -184,3 +184,48 @@ FinAlgoritmo
 
 
 //Semana 3
+- Simple calculator
+
+Algoritmo calculadoraSensilla
+	Escribir 'Ingrese dos números: '
+	Leer num1, num2
+
+	Escribir 'Ingrese operación a realizar (+, -, *, /): '
+	Leer operacion
+	
+	Segun operacion Hacer
+		'+':
+			Imprimir ConvertirATexto(num1) + ' + ' + ConvertirATexto(num2) + ' ='
+			Imprimir  num1 + num2
+		'-':
+			Imprimir ConvertirATexto(num1) + ' - ' + ConvertirATexto(num2) + ' ='
+			Imprimir  num1 - num2
+		'*':
+			Imprimir ConvertirATexto(num1) + ' * ' + ConvertirATexto(num2) + ' ='
+			Imprimir  num1 * num2
+		'/':
+			Imprimir ConvertirATexto(num1) + ' / ' + ConvertirATexto(num2) + ' ='
+			Imprimir  num1 / num2
+		De Otro Modo:
+			Imprimir 'Opción no válida'
+	FinSegun
+FinAlgoritmo
+
+- Special number
+
+Algoritmo specialNumber
+	Escribir 'Ingrese número: '
+	Leer n
+	Si n == 100 Entonces
+		Imprimir 'This is a special number'
+	SiNo
+		Si n < 1000 & n <> 100 & (n % 10 == 0) Entonces
+			Imprimir 'This number is almost special'
+		SiNo
+			Imprimir 'Just a regular number'
+		FinSi
+	FinSi
+	//Si n % 10 == 0 Entonces
+		//Imprimir 'This number is multiple of 10'
+	//FinSi
+FinAlgoritmo
