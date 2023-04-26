@@ -330,3 +330,43 @@ Algoritmo tablaMultiplicar
 	FinMientras
 FinAlgoritmo
 
+
+- Simple calculator with Do While
+
+Algoritmo calculadoraSensilladowhile
+	Repetir
+	Escribir 'Ingrese dos números: '
+	Leer num1, num2
+
+	Escribir 'Ingrese operación a realizar (+, -, *, /): '
+	Leer operacion
+	
+	Si operacion == '+' | operacion == '-' | operacion == '*' | operacion == '/' Entonces
+		Si operacion == '+' Entonces
+			Imprimir ConvertirATexto(num1) + ' + ' + ConvertirATexto(num2) + ' ='
+			Imprimir  num1 + num2
+		SiNo
+			Si operacion == '-' Entonces
+				Imprimir ConvertirATexto(num1) + ' - ' + ConvertirATexto(num2) + ' ='
+				Imprimir  num1 - num2
+			SiNo
+				Si operacion == '*' Entonces
+					Imprimir ConvertirATexto(num1) + ' * ' + ConvertirATexto(num2) + ' ='
+					Imprimir  num1 * num2
+				SiNo
+					Si operacion == '/' Entonces
+						Imprimir ConvertirATexto(num1) + ' / ' + ConvertirATexto(num2) + ' ='
+						Imprimir  num1 / num2
+					SiNo
+						Imprimir 'Opción no válida'
+					FinSi
+					
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+
+	Imprimir '¿Desean continuar (S)?: '
+	Leer opcion
+	Mientras Que opcion = 'S' | opcion = 's'
+FinAlgoritmo
