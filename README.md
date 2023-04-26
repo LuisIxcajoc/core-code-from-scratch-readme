@@ -314,3 +314,19 @@ Algoritmo calculadoraSensilla
 			Imprimir 'Opción no válida'
 	FinSegun
 FinAlgoritmo
+
+
+- Multiplication Tables
+
+Algoritmo tablaMultiplicar
+	Definir  i Como Entero
+	Escribir 'Ingrese nùmero a generar tabla de multiplicar: '
+	Leer num
+	i = 1
+
+	Mientras i <= 10 Hacer
+		Imprimir ConvertirATexto(num) + ' x ' + ConvertirATexto(i) + ' = ' num * i
+		i = i + 1
+	FinMientras
+FinAlgoritmo
+
