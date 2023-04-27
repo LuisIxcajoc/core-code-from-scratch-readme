@@ -370,3 +370,75 @@ Algoritmo calculadoraSensilladowhile
 	Leer opcion
 	Mientras Que opcion = 'S' | opcion = 's'
 FinAlgoritmo
+
+
+- Multiplication Tables with For
+
+Algoritmo tablaMultiplicar
+	Definir i Como Entero
+	Escribir 'Ingrese nùmero a generar tabla de multiplicar: '
+	Leer num
+
+	Para i = 1 Hasta 10 Con Paso 1 Hacer
+		Imprimir ConvertirATexto(num) + ' x ' + ConvertirATexto(i) + ' = ' num * i
+	FinPara
+FinAlgoritmo
+
+
+- Ascending and Descending Numbers
+
+Algoritmo ordenar
+	Imprimir 'Ingrese un número: '
+	Leer num
+
+	imprimir 'Selecciones una opción'
+	Imprimir '1. Orden ascendente'
+	Imprimir '2. Orden descendente'
+	Leer opcion
+
+	si opcion == 1 Entonces
+		Para i = 0 Hasta num Con Paso 1 Hacer
+			Imprimir i
+		FinPara
+	SiNo
+		si opcion == 2 Entonces
+			Para i = num Hasta 0 Con Paso -1 Hacer
+				Imprimir i
+			FinPara
+		FinSi
+	FinSi
+
+FinAlgoritmo
+
+
+- Greetings
+
+Algoritmo saludar
+	Definir contadorSaludos Como Entero
+	contadorSaludos = 0
+
+	Repetir
+	Imprimir 'Ingrese una hora: '
+	Leer hora
+
+	si hora >= 0 & hora <= 12 Entonces
+		Imprimir 'Buenos días'
+		contadorSaludos = contadorSaludos + 1
+	FinSi
+
+	si hora >= 13 & hora <= 18 Entonces
+		Imprimir 'Buenas tardes'
+		contadorSaludos = contadorSaludos + 1
+	FinSi
+
+	si hora >= 19 & hora <= 23 Entonces
+		Imprimir 'Buenas noches'
+		contadorSaludos = contadorSaludos + 1
+	FinSi
+
+	Imprimir '¿Desea continuar (s = Si)?'
+	Leer opcion
+	Mientras Que opcion = 's' | opcion = 'S'
+
+	Imprimir 'Cantidad de saludos: ' contadorSaludos
+FinAlgoritmo
