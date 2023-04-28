@@ -442,3 +442,53 @@ Algoritmo saludar
 
 	Imprimir 'Cantidad de saludos: ' contadorSaludos
 FinAlgoritmo
+
+
+- Pseudocode - Week 4
+
+- Average sales and commission
+
+Algoritmo comision
+	Definir TotalValorVenta Como Real
+	TotalValorVenta = 0
+
+	Escribir 'Ingrese el nùmero de ventas: '
+	Leer numVentas
+
+	Para i = 1 Hasta numVentas Con Paso 1 Hacer
+		Imprimir 'Ingrese el valor de la venta ' + ConvertirATexto(i) + ' :'
+		Leer valorVenta
+		TotalValorVenta = TotalValorVenta + valorVenta
+	FinPara
+
+	Imprimir 'Valor promedio de las ventas = ' + ConvertirATexto(TotalValorVenta / numVentas)
+	si numVentas > 5 Entonces
+		Imprimir 'La comisiòn del 15% es: ' + ConvertirATexto(TotalValorVenta * 0.15)
+	SiNo
+		Imprimir 'La comisiòn del 10% es: ' + ConvertirATexto(TotalValorVenta * 0.10)
+	FinSi
+FinAlgoritmo
+
+
+- Even or odd
+
+Algoritmo numeros
+
+	Repetir
+		Imprimir 'Ingrese un nùmero entre el 1 al 50: '
+		Leer num
+		si num < 1 | num > 50 Entonces
+			Imprimir '-Error- nùmero invàlido'
+		FinSi
+	Mientras Que num < 1 | num > 50
+	
+	par = num % 2 = 0
+	Para i = 1 Hasta num Con Paso 1 Hacer
+		si i % 2 = 0 & par Entonces
+			Imprimir i
+		FinSi
+		si i % 2 = 1 & ~(par) Entonces
+			Imprimir i
+		FinSi
+	FinPara
+FinAlgoritmo
