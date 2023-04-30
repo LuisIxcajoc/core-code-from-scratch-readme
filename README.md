@@ -492,3 +492,33 @@ Algoritmo numeros
 		FinSi
 	FinPara
 FinAlgoritmo
+
+
+- Full name
+
+Algoritmo FullName
+	Escribir 'Ingrese su nombre: '
+	Leer nombre
+	Escribir 'Ingrese su apellido: '
+	Leer apellido
+
+	Escribir Mayusculas(Subcadena(nombre, 0, 0)) + Minusculas(Subcadena(nombre, 1, Longitud(nombre))) + ' ' + Mayusculas(Subcadena(apellido, 0, 0)) + Minusculas(Subcadena(apellido, 1, Longitud(apellido)))
+
+FinAlgoritmo
+
+
+- Throw dice
+
+Algoritmo ThrowDice
+	Para i = 1 Hasta 10 Con Paso 1
+		dado1 = Aleatorio(1,6)
+		dado2 = Aleatorio(1,6)
+
+		si dado1 == dado2 Entonces
+			Escribir dado1 ' ' dado2 ' los dados son iguales'
+		SiNo
+			Escribir dado1 ' ' dado2
+		FinSi
+
+	FinPara
+FinAlgoritmo
