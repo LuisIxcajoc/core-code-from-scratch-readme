@@ -522,3 +522,56 @@ Algoritmo ThrowDice
 
 	FinPara
 FinAlgoritmo
+
+
+- Distance to zero
+
+Algoritmo DistanceToZero
+	Imprimir 'Ingrese un nùmero: '
+	Leer num
+
+	Para i = 1 hasta 4 Con Paso 1 Hacer
+		Imprimir 'Ingrese un nùmero: '
+		Leer num2
+
+		Si Abs(num2) > Abs(num) Entonces
+			num = num2
+		FinSi
+	FinPara
+
+	Imprimir Trunc(num)
+FinAlgoritmo
+
+
+- Toss coin
+
+Algoritmo TossCoin
+	Escribir 'Ingrese el primer nombre: '
+	Leer nombre1
+	Escribir 'Ingrese el primer valor: '
+	Leer valor1
+
+	Escribir 'Ingrese el segundo nombre: '
+	Leer nombre2
+	Escribir 'Ingrese el segundo valor: '
+	Leer valor2
+
+	Si valor1 <= 0 | valor2 <= 0 Entonces
+		Si valor1 <= 0 & valor2 > 0 Entonces
+			Escribir 'Jugador ganador: ' + Mayusculas(nombre2) + ' ' + ConvertirATexto(valor2)
+		SiNo
+			Si valor1 > 0 & valor2 <= 0 Entonces
+				Escribir 'Jugador ganador: ' + Mayusculas(nombre1) + ' ' + ConvertirATexto(valor1)
+			FinSi
+		FinSi
+	SiNo
+		numGanador = Aleatorio(1, 2)
+		Si numGanador == 1 Entonces
+			Escribir 'Jugador ganador: ' + Mayusculas(nombre1) + ' ' + ConvertirATexto(valor1)
+		SiNo
+			Escribir 'Jugador ganador: ' + Mayusculas(nombre2) + ' ' + ConvertirATexto(valor2)
+		FinSi
+	FinSi
+FinAlgoritmo
+
+
