@@ -575,3 +575,24 @@ Algoritmo TossCoin
 FinAlgoritmo
 
 
+-Total price
+
+Funcion RetornarprecioTotal <- precioTotal(precio, iva)
+	RetornarprecioTotal = precio + (precio * (iva / 100))
+	Si precio > 3000 Entonces
+		RetornarprecioTotal = RetornarprecioTotal - (RetornarprecioTotal * 0.1)
+	FinSi
+FinFuncion
+
+Algoritmo TotalPrice
+	Escribir 'Ingrese el precio: '
+	Leer precio
+	Escribir 'Ingrese el iva: '
+	Leer iva
+
+	Imprimir precioTotal(precio, iva)
+FinAlgoritmo
+
+
+- Reverse direction and size
+
