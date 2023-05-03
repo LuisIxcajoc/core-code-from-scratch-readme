@@ -596,3 +596,32 @@ FinAlgoritmo
 
 - Reverse direction and size
 
+Funcion RetornaReverse <- ReverseDirectionAndSize(ar_texto)
+	Definir Reverse_texto Como Caracter
+	Definir Sub_texto Como Caracter
+	Reverse_texto = ''
+	Sub_texto = ''
+
+	l_ar_texto = Longitud(ar_texto)
+	Para i = l_ar_texto - 1 Hasta 0 Con Paso -1 Hacer
+		Sub_texto = Subcadena(ar_texto, i, i)
+		Si Sub_texto = Mayusculas(Sub_texto) Entonces
+			Sub_texto = Minusculas(Sub_texto)
+		SiNo
+			Sub_texto = Mayusculas(Sub_texto)
+		FinSi
+		Reverse_texto = Reverse_texto + Sub_texto
+	FinPara
+	RetornaReverse = Reverse_texto
+FinFuncion
+
+Algoritmo reverse
+	Imprimir 'Ingrese un texto: '
+	Leer texto
+
+	Imprimir ReverseDirectionAndSize(texto)
+
+FinAlgoritmo
+
+
+//Semana 5
