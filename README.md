@@ -642,3 +642,63 @@ Algoritmo Converter
 	Leer seg
 	Imprimir timeConverter(seg)
 FinAlgoritmo
+
+
+- Compare distances
+
+Funcion retornarCompareDistances <- compareDistances(ar_num1, ar_num2, ar_num3, ar_num4, ar_num5)
+	Definir sumaPositivos Como Real
+	Definir sumaNegativos Como Real
+	sumaPositivos = 0
+	sumaNegativos = 0
+
+	Si ar_num1 > 0 Entonces
+		sumaPositivos = sumaPositivos + ar_num1
+	SiNo
+		sumaNegativos = sumaNegativos + ar_num1
+	FinSi
+
+	Si ar_num2 > 0 Entonces
+		sumaPositivos = sumaPositivos + ar_num2
+	SiNo
+		sumaNegativos = sumaNegativos + ar_num2
+	FinSi
+
+	Si ar_num3 > 0 Entonces
+		sumaPositivos = sumaPositivos + ar_num3
+	SiNo
+		sumaNegativos = sumaNegativos + ar_num3
+	FinSi
+
+	Si ar_num4 > 0 Entonces
+		sumaPositivos = sumaPositivos + ar_num4
+	SiNo
+		sumaNegativos = sumaNegativos + ar_num4
+	FinSi
+
+	Si ar_num5 > 0 Entonces
+		sumaPositivos = sumaPositivos + ar_num5
+	SiNo
+		sumaNegativos = sumaNegativos + ar_num5
+	FinSi
+
+	distanciaPositivos = sumaPositivos - 0
+	distanciaNegativos = Abs(sumaNegativos) - 0
+	
+	Si distanciaPositivos > distanciaNegativos
+		retornarCompareDistances = Verdadero
+	SiNo
+		retornarCompareDistances = Falso
+	FinSi
+FinFuncion
+
+Algoritmo Distances
+	Imprimir 'Ingrese 5 nùmeros: '
+	Leer num1
+	Leer num2
+	Leer num3
+	Leer num4
+	Leer num5
+
+	Imprimir CompareDistances(num1, num2, num3, num4, num5)
+FinAlgoritmo
