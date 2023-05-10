@@ -626,3 +626,19 @@ FinAlgoritmo
 
 //Semana 5
 
+- Time Converter
+
+Funcion retornarTimeConverter <- timeConverter(ar_segundos)
+
+	dias = Trunc(ar_segundos / 86400)
+	horas = Trunc((ar_segundos - (dias * 86400)) / 3600)
+	minutos = Trunc((ar_segundos - (dias * 86400) - (horas * 3600)) / 60)
+	seg = ar_segundos - (dias * 86400) - (horas * 3600) - (minutos * 60)
+	retornarTimeConverter = 'dìas: ' + ConvertirATexto(dias) + ', horas: ' + ConvertirATexto(horas) + ', minutos: ' + ConvertirATexto(minutos) + ' y segundos: ' + ConvertirATexto(seg)
+FinFuncion
+
+Algoritmo Converter
+	Imprimir 'Ingrese los segundos: '
+	Leer seg
+	Imprimir timeConverter(seg)
+FinAlgoritmo
