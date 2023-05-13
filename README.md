@@ -702,3 +702,90 @@ Algoritmo Distances
 
 	Imprimir CompareDistances(num1, num2, num3, num4, num5)
 FinAlgoritmo
+
+
+- Sum of pairs
+
+Funcion retornaSumOfPairs <- sumOfPairs()
+	Definir sumatoria Como Entero
+	sumatoria = 0
+
+	Repetir
+		Imprimir 'Ingrese un nùmero del 1 al 100: '
+		Leer num
+
+		Si (num % 2) = 0 & num >= 0 & num <= 100 Entonces
+			sumatoria = sumatoria + num
+			Imprimir sumatoria
+		FinSi
+	Mientras Que num >= 0 & num <= 100
+
+	retornaSumOfPairs = sumatoria
+FinFuncion
+
+Algoritmo sumaPares
+	Imprimir sumOfPairs()
+FinAlgoritmo
+
+
+- Mid point
+
+Funcion retornaMidPoint <- midpoint(num1, num2)
+	retornaMidPoint = (num1 + num2) / 2
+FinFuncion
+
+Algoritmo puntoMedio
+	Imprimir 'Ingrese dos nùmeros: '
+	Leer num1
+	Leer num2
+	
+	Imprimir midpoint(num1, num2)
+FinAlgoritmo
+
+
+- Cashier
+
+Funcion retornaSaldo <- Depositar(saldo)
+	Imprimir '¿Cuànto quiere dèpositar?'
+	Leer deposito
+	retornaSaldo = saldo + deposito
+FinFuncion
+
+Funcion retornaRetiro <- Retirar(saldo)
+	Imprimir '¿Cuànto quiere retirar?'
+	Leer retiro
+	retornaRetiro = saldo - retiro
+FinFuncion
+
+Funcion retornarSaldo <- Cajero()
+	Definir saldo Como Real
+	saldo = 1000
+
+	Repetir
+		Imprimir 'Seleccione una opciòn: '
+		Imprimir 'a. depositar'
+		Imprimir 'b. retirar'
+		Imprimir 'c. salir'
+		Leer opcionSel
+
+		Segun opcionSel
+			'a':
+				saldo = Depositar(saldo)
+			'b':
+				saldo = Retirar(saldo)
+			'c':
+			De Otro Modo:
+				Imprimir 'Opciòn no vàlida'
+		FinSegun
+	Mientras Que Minusculas(opcionSel) <> 'c'
+
+	retornarSaldo = saldo
+FinFuncion
+
+Algoritmo caja
+	Imprimir 'Saldo actual: ' + ConvertirATexto(cajero())
+FinAlgoritmo
+
+
+- Weather average
+
