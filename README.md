@@ -789,3 +789,48 @@ FinAlgoritmo
 
 - Weather average
 
+Funcion retornarGradoCelsius <- gradosCelsius(grado)
+	retornarGradoCelsius = (grado - 32) / 1.8
+FinFuncion
+
+Algoritmo WeatherAverage
+	Definir cont Como Entero
+	cont = 0
+	Definir sumatoria Como Real
+	sumatoria = 0
+	Definir opcionSel Como Caracter
+	opcionSel = ''
+
+	Repetir
+		Imprimir 'Seleccione una opciòn: '
+		Imprimir 'a. grados celsius'
+		Imprimir 'b. grados fahrenheit'
+		Imprimir 'x. salir'
+		Leer opcionSel
+
+		Segun opcionSel
+			'a':
+				cont = cont + 1
+				Imprimir 'Ingrese el valor: '
+				Leer grado
+
+				sumatoria = sumatoria + grado
+			'b':
+				cont = cont + 1
+				Imprimir 'Ingrese el valor: '
+				Leer grado
+
+				grado = gradosCelsius(grado)
+				sumatoria = sumatoria + grado
+
+			'x':
+			De Otro Modo:
+				Imprimir 'Opciòn no vàlida'
+		FinSegun
+	Mientras Que Minusculas(opcionSel) <> 'x'
+
+	Si cont = 0 Entonces
+		cont = 1
+	FinSi
+	Imprimir 'El resultado es: ' + ConvertirATexto(sumatoria / cont)
+FinAlgoritmo
