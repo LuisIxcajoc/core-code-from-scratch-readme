@@ -834,3 +834,52 @@ Algoritmo WeatherAverage
 	FinSi
 	Imprimir 'El resultado es: ' + ConvertirATexto(sumatoria / cont)
 FinAlgoritmo
+
+
+- IF
+
+//Verifica si un nùmero es mayor o igual a otro nùmero
+
+const num1 = 5;
+const num2 = 10;
+
+if (num1 >= num2){
+    console.log(num1 + ' es mayor o igual a ' + num2)
+}
+else{
+    console.log(num2 + ' es mayor a ' + num1)
+};
+
+
+- WHILE
+
+//tabla de multiplicar
+
+var i;
+var j;
+
+i = 1;
+while (i <= 10) {
+    j = 1;
+    while (j <= 10){
+        console.log(i + ' x ' + j + ' = ' + i * j);
+        j++;
+    }
+    console.log('-----------');
+    i++;
+}
+
+
+- FOR
+
+//tabla de multiplicar
+
+var i;
+var j;
+
+for (i = 1; i <= 10; i++){
+    for (j = 1; j <= 10; j++){
+        console.log(i + ' x ' + j + ' = ' + i * j);
+    }
+    console.log('-----------');
+}
