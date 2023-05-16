@@ -883,3 +883,10 @@ for (i = 1; i <= 10; i++){
     }
     console.log('-----------');
 }
+
+
+//Semana 6
+
+- Variables
+
+let firstname = 'Lata';
