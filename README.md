@@ -918,3 +918,38 @@ let tree = 'maple';
 function hello(){
    return 'Hello world!';
 }
+
+
+3.- Multiple functions
+
+function a(){
+   return 'Hello a!';
+}
+
+function b(){
+   return 'Hello b!';
+}
+
+
+4.- Function calls
+
+function greet(){
+   return 'Haydo!';
+}
+
+let salutation = greet();
+
+
+5.- What is x? (function version)
+
+'How do you do?'
+
+
+6.- Parameters
+
+function echo(input){
+   return input;
+}
+
+echo('Greta');
+echo('CO2');
