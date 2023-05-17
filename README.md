@@ -953,3 +953,39 @@ function echo(input){
 
 echo('Greta');
 echo('CO2');
+
+
+Week challenges (Thursday)
+1.- Strings
+
+function greet(name){
+   return 'Hello ' + name + '!';
+}
+
+
+2.- String: length
+
+function length(cadena){
+   return cadena.length;
+}
+
+
+3.- String: toUpperCase()
+
+function toCase(cadena){
+   return cadena.toLowerCase() + '-' + cadena.toUpperCase();
+}
+
+
+4.- String: charAt()
+
+function shortcut(cadena1, cadena2){
+   return cadena1.charAt(0) + cadena2.charAt(0);
+}
+
+
+5.- String: indexOf()
+
+function indexOfIgnoreCase(cadena1, cadena2){
+   return cadena1.toLowerCase().indexOf(cadena2.toLowerCase());
+}
