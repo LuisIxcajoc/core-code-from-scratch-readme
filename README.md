@@ -989,3 +989,46 @@ function shortcut(cadena1, cadena2){
 function indexOfIgnoreCase(cadena1, cadena2){
    return cadena1.toLowerCase().indexOf(cadena2.toLowerCase());
 }
+
+
+- JavaScript - Week 7
+
+
+- Week challenges (Monday)
+
+
+1.- String: substr()
+
+function firstWord(cadena){
+   return cadena.substr(0, cadena.indexOf(' '));
+};
+
+
+2.- String: replace()
+
+function normalize(fecha){
+   return fecha.replace(/-/g, '/');
+}
+
+
+3.- Increment
+
+Tiene un valor de 7
+
+4.- Fahrenheit
+
+function toFahrenheit(gCelsius){
+   return (gCelsius * 9/5) + 32
+};
+
+
+5.- Boolean
+
+function nand(valBool1, valBool2){
+   if(valBool1 && valBool2){
+      return false;
+   }
+   else{
+      return true;
+   };
+};
