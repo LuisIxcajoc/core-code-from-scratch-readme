@@ -1032,3 +1032,42 @@ function nand(valBool1, valBool2){
       return true;
    };
 };
+
+
+- Week challenges (Tuesday)
+
+
+2.- Objects
+
+function animal(obj){
+  return 'This ' + obj.color + ' ' + obj.name + ' has ' + obj.legs + ' legs.';
+}
+
+
+3.- Return to sanity
+
+function mystery() {
+  var results =
+    {sanity: 'Hello'};
+  return results;
+}
+
+
+4.- Object syntax debug
+
+var rooms = {
+  first: {
+    description: 'This is the first room',
+    items: {
+      chair: 'The old chair looks comfortable',
+      lamp: 'This lamp looks ancient'
+    }
+  },
+  second: {
+    description: 'This is the second room',
+    items: {
+      couch: 'This couch looks like it would hurt your back',
+      table: 'On the table there is an unopened bottle of water'
+    }
+  }
+}
