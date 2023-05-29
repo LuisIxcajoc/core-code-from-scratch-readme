@@ -1163,3 +1163,136 @@ function popElement(arr){
   arr.pop();
   return arr;
 }
+
+
+- Javascript - Week 8
+
+
+- Week challenges (Monday)
+
+
+1.- Training JS #7: if..else and ternary operator!
+
+function saleHotdogs(n){
+  return n < 5? n * 100 : (n >= 5 && n < 10) ? n * 95 : n * 90;
+}
+
+
+2.- Training JS #8: Conditional statement--switch
+
+function howManydays(month){
+  var days;
+  switch (month){
+    case 1:
+       days = 31;
+       break;
+    case 3:
+       days = 31;
+       break;
+    case 5:
+       days = 31;
+       break;
+    case 7:
+       days = 31;
+       break;
+    case 8:
+       days = 31;
+       break;
+    case 10:
+       days = 31;
+       break;
+    case 12:
+       days = 31;
+       break;
+    case 4:
+       days = 30;
+       break;
+    case 6:
+       days = 30;
+       break;
+    case 9:
+       days = 30;
+       break;
+    case 11:
+       days = 30;
+       break;
+    case 2:
+       days = 28;
+       break;
+  }
+  return days;
+}
+
+
+3.- Basic Calculator
+
+function calculate(num1, operation, num2) {
+  if( !(typeof num1 === 'number') && !(typeof num2 === 'number') ){
+    return null;
+  }
+
+  switch (operation){
+    case '+':
+      return num1 + num2;
+      break;
+    case '-':
+      return num1 - num2;
+      break;
+    case '*':
+      return num1 * num2;
+      break;
+    case '/':
+      if(num2 === 0 ){
+        return null;
+      }
+      else{
+        return num1 / num2;
+      }
+      break;
+    default:
+      return null;
+  }
+}
+
+
+- Week challenges (Tuesday)
+
+
+1.- Even or odd
+
+function evenOrOdd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd';
+}
+
+
+2.- A wolf in sheep's clothing
+
+function warnTheSheep(queue) {
+  if(queue[queue.length - 1] === 'wolf'){
+    return "Pls go away and stop eating my sheep";
+  }
+  else
+    var posicion = queue.length - queue.indexOf('wolf') - 1
+    return "Oi! Sheep number " + posicion + "! You are about to be eaten by a wolf!"
+}
+
+
+3.- Decode the morse code
+
+decodeMorse = function(morseCode){
+  // Your code here
+  // You can use MORSE_CODE[morse]
+  let nMorseCode = morseCode.trim();
+  let codes = morseCode.split('   ');
+  let letras = []
+  let frase = []
+
+  for(let i = 0; i < codes.length; i++){
+    letras = codes[i].split(' ');
+    for (let j = 0; j < letras.length; j++) {
+      letras[j] = MORSE_CODE[letras[j]];
+    }
+    frase.push(letras.join(''));
+  }
+  return frase.join(' ').trim();
+};
