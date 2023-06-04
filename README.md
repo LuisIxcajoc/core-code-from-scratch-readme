@@ -1322,3 +1322,38 @@ function likes(names) {
       break;
   }
 }
+
+
+2.- Bit counting
+
+var countBits = function (n) {
+  let binaryNumber = n.toString(2);
+  let oneBitCount = 0;
+  for (let i = 0; i < binaryNumber.length; i++) {
+    if (binaryNumber[i] === '1') oneBitCount++;
+  }
+  return oneBitCount;
+};
+
+
+3.- Your order, please
+
+function order(words){
+  const palabras = words.split(' ');
+  var words2 = words.split(' ');
+  var index = 0;
+  var palabra;
+
+  for(let i = 0; i < palabras.length; i++){
+    palabra = palabras[i];
+
+    for(let j = 0; j < palabra.length; j++){
+      index = Number(palabra[j]);
+
+      if(index > 0){
+          words2.splice(index - 1, 1, palabras[i]);
+        }
+    }
+  }
+    return String(words2).replace(/,/g," ");
+}
