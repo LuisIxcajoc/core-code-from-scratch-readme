@@ -1357,3 +1357,27 @@ function order(words){
   }
     return String(words2).replace(/,/g," ");
 }
+
+
+- Week challenges (Thursday)
+
+
+1.- Counting duplicates
+
+function duplicateCount(text){
+  let cont = 0;
+  text = text.toLowerCase(); // todo minuscula
+
+  for(let i = 0; i < text.length; i++){
+    if(text.indexOf(text[i]) !== text.lastIndexOf(text[i])){
+      cont++;
+      text = text.replace(new RegExp(text[i], 'g'), '');
+      i = i - 1;
+    }
+  }
+  return cont;
+}
+
+
+2.- Encrypt this!
+
