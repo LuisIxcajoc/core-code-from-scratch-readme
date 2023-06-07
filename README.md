@@ -1381,3 +1381,31 @@ function duplicateCount(text){
 
 2.- Encrypt this!
 
+var encryptThis = function(text) {
+  let text2 = [];
+  let caracter;
+  const palabras = text.split(' ');
+  let palabra;
+  let palabra2;
+
+  for(let i = 0; i < palabras.length; i++){
+    palabra = palabras[i];
+    for(let j = 0; j < palabra.length; j++){
+      if(j === 0){
+        palabra2 = palabra[j].charCodeAt();
+      }
+      else if(j === 1){
+        palabra2 = palabra2 + palabra[palabra.length - 1];
+        caracter = palabra[1];
+      }
+      else if(j === palabra.length -1){
+        palabra2 = palabra2 + caracter;
+      }
+      else{
+        palabra2 = palabra2 + palabra[j];
+      }
+    }
+    text2.push(palabra2);
+  }
+  return String(text2).replace(/,/g," ");
+}
