@@ -1435,3 +1435,18 @@ const toCamelCase = str => str
   .map((palabra, i) => (i > 0 ? palabra
   .replace(/(^\w)(\w*)/, palabra.toUpperCase()[0] + '$2') : palabra))
   .join('');
+
+
+- Javascript - Week 9
+
+
+- Week challenges (Monday)
+
+
+1.- "this" is a problem
+
+function NameMe(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    this.name = this.firstName + ' ' + this.lastName;
+}
