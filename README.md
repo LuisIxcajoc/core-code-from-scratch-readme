@@ -1409,3 +1409,29 @@ var encryptThis = function(text) {
   }
   return String(text2).replace(/,/g," ");
 }
+
+
+3.- Valid parentheses
+
+function validParentheses(parens){
+  let cont = 0;
+  for(let i = 0; i < parens.length; i++){
+    if(parens[i] === '('){
+      cont++;
+    }
+    if(parens[i] === ')'){
+      cont--;
+    }
+    if(cont < 0) return false;
+  }
+  return cont == 0;
+}
+
+
+4.- Convert string to camel case
+
+const toCamelCase = str => str
+  .split(/[_-]/)
+  .map((palabra, i) => (i > 0 ? palabra
+  .replace(/(^\w)(\w*)/, palabra.toUpperCase()[0] + '$2') : palabra))
+  .join('');
