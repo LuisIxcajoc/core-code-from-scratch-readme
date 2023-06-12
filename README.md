@@ -1463,3 +1463,9 @@ function processData(data){
 
 3.- Stop gninnipS My sdroW!
 
+function spinWords(string){
+  return string
+    .split(' ')
+    .map(arr => ((arr.length >= 5) ? arr = arr.split('').reverse().join('') : arr))
+    .join(' ');
+}
