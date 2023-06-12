@@ -1450,3 +1450,16 @@ function NameMe(first, last) {
     this.lastName = last;
     this.name = this.firstName + ' ' + this.lastName;
 }
+
+
+2.- Thinkful - List and Loop Drills: Lists of lists
+
+function processData(data){
+  return data
+    .map(arr => arr[0] - arr[1])
+    .reduce((product, result) => product * result, 1);
+}
+
+
+3.- Stop gninnipS My sdroW!
+
