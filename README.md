@@ -1492,3 +1492,14 @@ function NamedOne(first, last) {
       }
     });
  }
+
+
+2.- Who likes it?
+
+function likes(names) {
+  if(names.length === 0) return 'no one likes this';
+  if(names.length === 1) return names.slice() + ' likes this';
+  if(names.length === 2) return names.slice().join(' and ') + ' like this';
+  if(names.length === 3) return names.slice(0, 1) + ', ' + names.slice(1, 3).join(' and ') + ' like this';
+  return names.slice(0, 2).join(', ') + ' and ' + (names.length - 2) + ' others like this'
+}
