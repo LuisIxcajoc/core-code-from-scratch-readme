@@ -1469,3 +1469,26 @@ function spinWords(string){
     .map(arr => ((arr.length >= 5) ? arr = arr.split('').reverse().join('') : arr))
     .join(' ');
 }
+
+
+- Week challenges (Tuesday)
+
+
+1.- "this" is an other problem
+
+function NamedOne(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    Object.defineProperty(this, 'fullName', {
+      get : function(){
+        return this.firstName + ' ' + this.lastName;
+      },
+      set : function(newFullName){
+        const parts = newFullName.split(' ');
+        if(parts.length === 2){
+          this.firstName = parts[0];
+          this.lastName = parts[1];
+        }
+      }
+    });
+ }
