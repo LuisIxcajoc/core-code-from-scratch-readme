@@ -1503,3 +1503,26 @@ function likes(names) {
   if(names.length === 3) return names.slice(0, 1) + ', ' + names.slice(1, 3).join(' and ') + ' like this';
   return names.slice(0, 2).join(', ') + ' and ' + (names.length - 2) + ' others like this'
 }
+
+
+3.- Convert string to camel case
+
+function toCamelCase(str){
+    if(str === '') return '';
+  let letras = str.split('');
+  //return str.split(/[-_]/).reduce((acc, el) => el[0].toUpperCase() + el.slice(1), [])
+  return letras.reduce((acc, val, i) => {
+    if(val === '-' || val === '_'){
+      return acc + letras[i + 1].toUpperCase();
+    }
+    else if(i === 0){
+      return val;
+    }
+  else if(letras[i - 1] === '-' || letras[i - 1] === '_' ){
+      return acc;
+    }
+    else{
+        return acc + val;
+    }
+  }, letras[0]);
+}
