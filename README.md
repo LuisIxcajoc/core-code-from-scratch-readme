@@ -1536,3 +1536,10 @@ function toCamelCase(str){
 function processArray(arr, callback) {
     return arr.map(el => callback(el));
 }
+
+
+2.- Moving Zeros To The End
+
+function moveZeros(arr) {
+  return arr.filter(el => el !== 0).concat(arr.filter(el => el === 0));
+}
