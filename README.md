@@ -1526,3 +1526,13 @@ function toCamelCase(str){
     }
   }, letras[0]);
 }
+
+
+- Week challenges (Wednesday)
+
+
+1.- Easy mathematical callback
+
+function processArray(arr, callback) {
+    return arr.map(el => callback(el));
+}
