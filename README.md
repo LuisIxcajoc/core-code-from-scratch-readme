@@ -1543,3 +1543,18 @@ function processArray(arr, callback) {
 function moveZeros(arr) {
   return arr.filter(el => el !== 0).concat(arr.filter(el => el === 0));
 }
+
+
+3.- Valid Parentheses
+
+function validParentheses(parens){
+  let acumulador = 0;
+  acumulador = parens.split('').reduce((acc, el) => {
+    if(el === '(') acc++;
+    if(el === ')') acc--;
+    if(acc < 0) acc = NaN;
+    return acc;
+  }, 0);
+  if(acumulador < 0) return false
+  return acumulador == 0;
+}
