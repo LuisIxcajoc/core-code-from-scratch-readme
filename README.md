@@ -1558,3 +1558,20 @@ function validParentheses(parens){
   if(acumulador < 0) return false
   return acumulador == 0;
 }
+
+
+- Week challenges (Thursday)
+
+
+1.- The Hashtag Generator
+
+function generateHashtag (str){
+  if(str.trim() === '') return false;
+  const hashtag = str.trim().split(' ').reduce(
+    (acc, el) => {
+      acc = acc + el.replace(/(^\w)(\w*)/, el.toUpperCase()[0] + `$2` );
+      return acc;
+  }, '');
+  if(hashtag.length > 139) return false;
+  return '#' + hashtag;
+}
